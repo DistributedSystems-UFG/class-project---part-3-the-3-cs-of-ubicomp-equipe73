@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.1.2" type="incidents">
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="This folder configuration (`v24`) is unnecessary; `minSdkVersion` is 27. Merge all the resources in this folder into `drawable`.">
+        <fix-data file="${:app*debug*sourceProvider*0*resDir*0}/drawable-v24" folderName="drawable" requiresApi="27"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable-v24"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Ip do Servidor&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_login.xml"
+            line="33"
+            column="9"
+            startOffset="1392"
+            endLine="33"
+            endColumn="38"
+            endOffset="1421"/>
+    </incident>
+
+    <incident
+        id="LintError"
+        severity="error"
+        message="The lint detector&#xA;    `androidx.appcompat.view.OnClickXmlDetector`&#xA;called `context.getMainProject()` during module analysis.&#xA;&#xA;This does not work correctly when running in AGP (7.1.2).&#xA;&#xA;In particular, there may be false positives or false negatives because&#xA;the lint check may be using the minSdkVersion or manifest information&#xA;from the library instead of any consuming app module.&#xA;&#xA;Contact the vendor of the lint issue to get it fixed/updated (if&#xA;known, listed below), and in the meantime you can try to work around&#xA;this by disabling the following issues:&#xA;&#xA;&quot;UsingOnClickInXml&quot;&#xA;&#xA;Issue Vendors:&#xA;Vendor: Android Open Source Project (appcompat-1.3.0)&#xA;Identifier: appcompat-1.3.0&#xA;Feedback: https://issuetracker.google.com/issues/new?component=192731&#xA;&#xA;Call stack: Context.getMainProject(Context.kt:117)←OnClickXmlDetector.visitAttribute(OnClickXmlDetector.kt:51)←ResourceVisitor.visitElement(ResourceVisitor.java:161)←ResourceVisitor.visitElement(ResourceVisitor.java:177)←ResourceVisitor.visitFile(ResourceVisitor.java:125)←LintDriver$checkResourceFolder$1.run(LintDriver.kt:2233)←LintClient.runReadAction(LintClient.kt:1786)←LintDriver$LintClientWrapper.runReadAction(LintDriver.kt:2707)←LintDriver.checkResourceFolder(LintDriver.kt:2228)←LintDriver.checkResFolder(LintDriver.kt:2181)←LintDriver.runFileDetectors(LintDriver.kt:1376)←LintDriver.checkProject(LintDriver.kt:1168)←LintDriver.checkProjectRoot(LintDriver.kt:631)←LintDriver.access$checkProjectRoot(LintDriver.kt:156)←LintDriver$analyzeOnly$1.invoke(LintDriver.kt:445)←LintDriver$analyzeOnly$1.invoke(LintDriver.kt:438)←LintDriver.doAnalyze(LintDriver.kt:505)←LintDriver.analyzeOnly(LintDriver.kt:437)←LintCliClient$analyzeOnly$1.invoke(LintCliClient.kt:242)←LintCliClient$analyzeOnly$1.invoke(LintCliClient.kt:242)">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Get Temperature&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="16"
+            column="9"
+            startOffset="654"
+            endLine="16"
+            endColumn="39"
+            endOffset="684"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Temperature will show here&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="26"
+            column="9"
+            startOffset="1017"
+            endLine="26"
+            endColumn="50"
+            endOffset="1058"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Led On&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="37"
+            column="9"
+            startOffset="1457"
+            endLine="37"
+            endColumn="30"
+            endOffset="1478"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Led Off&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="47"
+            column="9"
+            startOffset="1832"
+            endLine="47"
+            endColumn="31"
+            endOffset="1854"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Red Led&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_pro.xml"
+            line="26"
+            column="9"
+            startOffset="1009"
+            endLine="26"
+            endColumn="31"
+            endOffset="1031"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Green Led&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_pro.xml"
+            line="39"
+            column="9"
+            startOffset="1530"
+            endLine="39"
+            endColumn="33"
+            endOffset="1554"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Senha: &quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/initialpage.xml"
+            line="14"
+            column="9"
+            startOffset="561"
+            endLine="14"
+            endColumn="31"
+            endOffset="583"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Login: &quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/initialpage.xml"
+            line="25"
+            column="9"
+            startOffset="997"
+            endLine="25"
+            endColumn="31"
+            endOffset="1019"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/initialpage.xml"
+            line="30"
+            column="6"
+            startOffset="1215"
+            endLine="30"
+            endColumn="14"
+            endOffset="1223"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;User&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/initialpage.xml"
+            line="39"
+            column="9"
+            startOffset="1539"
+            endLine="39"
+            endColumn="28"
+            endOffset="1558"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/initialpage.xml"
+            line="43"
+            column="6"
+            startOffset="1689"
+            endLine="43"
+            endColumn="14"
+            endOffset="1697"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;password&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/initialpage.xml"
+            line="52"
+            column="9"
+            startOffset="2012"
+            endLine="52"
+            endColumn="32"
+            endOffset="2035"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/initialpage.xml"
+            line="56"
+            column="6"
+            startOffset="2165"
+            endLine="56"
+            endColumn="14"
+            endOffset="2173"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;34.136.25.200&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/initialpage.xml"
+            line="65"
+            column="9"
+            startOffset="2491"
+            endLine="65"
+            endColumn="37"
+            endOffset="2519"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Entrar&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/initialpage.xml"
+            line="76"
+            column="9"
+            startOffset="2899"
+            endLine="76"
+            endColumn="30"
+            endOffset="2920"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Servidor: &quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/initialpage.xml"
+            line="87"
+            column="9"
+            startOffset="3310"
+            endLine="87"
+            endColumn="34"
+            endOffset="3335"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="This folder configuration (`v26`) is unnecessary; `minSdkVersion` is 27. Merge all the resources in this folder into `mipmap-anydpi`.">
+        <fix-data file="${:app*debug*sourceProvider*0*resDir*0}/mipmap-anydpi-v26" folderName="mipmap-anydpi" requiresApi="27"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/mipmap-anydpi-v26"/>
+    </incident>
+
+    <incident
+        id="UseValueOf"
+        severity="warning"
+        message="Use `Integer.valueOf(port)` instead">
+        <fix-replace
+            description="Replace with valueOf()"
+            family="Replace with valueOf()"
+            robot="true"
+            independent="true"
+            oldPattern="(new.+)\("
+            replacement="Integer.valueOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/thermoledmobileclient/MainActivity.java"
+            line="73"
+            column="25"
+            startOffset="2699"
+            endLine="73"
+            endColumn="42"
+            endOffset="2716"/>
+    </incident>
+
+    <incident
+        id="UseValueOf"
+        severity="warning"
+        message="Use `Integer.valueOf(key)` instead">
+        <fix-replace
+            description="Replace with valueOf()"
+            family="Replace with valueOf()"
+            robot="true"
+            independent="true"
+            oldPattern="(new.+)\("
+            replacement="Integer.valueOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/thermoledmobileclient/MainActivity.java"
+            line="74"
+            column="24"
+            startOffset="2741"
+            endLine="74"
+            endColumn="40"
+            endOffset="2757"/>
+    </incident>
+
+    <incident
+        id="UseValueOf"
+        severity="warning"
+        message="Use `Integer.valueOf(port)` instead">
+        <fix-replace
+            description="Replace with valueOf()"
+            family="Replace with valueOf()"
+            robot="true"
+            independent="true"
+            oldPattern="(new.+)\("
+            replacement="Integer.valueOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/thermoledmobileclient/MainActivity.java"
+            line="135"
+            column="25"
+            startOffset="5342"
+            endLine="135"
+            endColumn="42"
+            endOffset="5359"/>
+    </incident>
+
+    <incident
+        id="UseValueOf"
+        severity="warning"
+        message="Use `Integer.valueOf(key)` instead">
+        <fix-replace
+            description="Replace with valueOf()"
+            family="Replace with valueOf()"
+            robot="true"
+            independent="true"
+            oldPattern="(new.+)\("
+            replacement="Integer.valueOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/thermoledmobileclient/MainActivity.java"
+            line="136"
+            column="24"
+            startOffset="5384"
+            endLine="136"
+            endColumn="40"
+            endOffset="5400"/>
+    </incident>
+
+    <incident
+        id="UseValueOf"
+        severity="warning"
+        message="Use `Integer.valueOf(port)` instead">
+        <fix-replace
+            description="Replace with valueOf()"
+            family="Replace with valueOf()"
+            robot="true"
+            independent="true"
+            oldPattern="(new.+)\("
+            replacement="Integer.valueOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/thermoledmobileclient/MainActivity.java"
+            line="145"
+            column="25"
+            startOffset="5752"
+            endLine="145"
+            endColumn="42"
+            endOffset="5769"/>
+    </incident>
+
+    <incident
+        id="UseValueOf"
+        severity="warning"
+        message="Use `Integer.valueOf(key)` instead">
+        <fix-replace
+            description="Replace with valueOf()"
+            family="Replace with valueOf()"
+            robot="true"
+            independent="true"
+            oldPattern="(new.+)\("
+            replacement="Integer.valueOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/thermoledmobileclient/MainActivity.java"
+            line="146"
+            column="24"
+            startOffset="5794"
+            endLine="146"
+            endColumn="40"
+            endOffset="5810"/>
+    </incident>
+
+    <incident
+        id="UseSwitchCompatOrMaterialCode"
+        severity="warning"
+        message="Use `SwitchCompat` from AppCompat or `SwitchMaterial` from Material library">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/thermoledmobileclient/ProActivity.java"
+            line="80"
+            column="5"
+            startOffset="3006"
+            endLine="80"
+            endColumn="32"
+            endOffset="3033"/>
+    </incident>
+
+    <incident
+        id="UseSwitchCompatOrMaterialCode"
+        severity="warning"
+        message="Use `SwitchCompat` from AppCompat or `SwitchMaterial` from Material library">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/thermoledmobileclient/ProActivity.java"
+            line="81"
+            column="5"
+            startOffset="3038"
+            endLine="81"
+            endColumn="30"
+            endOffset="3063"/>
+    </incident>
+
+    <incident
+        id="UseValueOf"
+        severity="warning"
+        message="Use `Integer.valueOf(port)` instead">
+        <fix-replace
+            description="Replace with valueOf()"
+            family="Replace with valueOf()"
+            robot="true"
+            independent="true"
+            oldPattern="(new.+)\("
+            replacement="Integer.valueOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/thermoledmobileclient/ProActivity.java"
+            line="257"
+            column="25"
+            startOffset="8344"
+            endLine="257"
+            endColumn="42"
+            endOffset="8361"/>
+    </incident>
+
+    <incident
+        id="UseValueOf"
+        severity="warning"
+        message="Use `Integer.valueOf(key)` instead">
+        <fix-replace
+            description="Replace with valueOf()"
+            family="Replace with valueOf()"
+            robot="true"
+            independent="true"
+            oldPattern="(new.+)\("
+            replacement="Integer.valueOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/thermoledmobileclient/ProActivity.java"
+            line="258"
+            column="24"
+            startOffset="8386"
+            endLine="258"
+            endColumn="40"
+            endOffset="8402"/>
+    </incident>
+
+    <incident
+        id="UseValueOf"
+        severity="warning"
+        message="Use `Integer.valueOf(port)` instead">
+        <fix-replace
+            description="Replace with valueOf()"
+            family="Replace with valueOf()"
+            robot="true"
+            independent="true"
+            oldPattern="(new.+)\("
+            replacement="Integer.valueOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/thermoledmobileclient/ProActivity.java"
+            line="271"
+            column="25"
+            startOffset="8730"
+            endLine="271"
+            endColumn="42"
+            endOffset="8747"/>
+    </incident>
+
+    <incident
+        id="UseValueOf"
+        severity="warning"
+        message="Use `Integer.valueOf(key)` instead">
+        <fix-replace
+            description="Replace with valueOf()"
+            family="Replace with valueOf()"
+            robot="true"
+            independent="true"
+            oldPattern="(new.+)\("
+            replacement="Integer.valueOf"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/thermoledmobileclient/ProActivity.java"
+            line="272"
+            column="24"
+            startOffset="8772"
+            endLine="272"
+            endColumn="40"
+            endOffset="8788"/>
+    </incident>
+
+    <incident
+        id="UseSwitchCompatOrMaterialCode"
+        severity="warning"
+        message="Use `SwitchCompat` from AppCompat or `SwitchMaterial` from Material library">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/thermoledmobileclient/ProActivity.java"
+            line="321"
+            column="13"
+            startOffset="10805"
+            endLine="321"
+            endColumn="25"
+            endOffset="10817"/>
+    </incident>
+
+</incidents>

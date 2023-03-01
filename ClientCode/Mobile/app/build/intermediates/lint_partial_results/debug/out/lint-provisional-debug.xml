@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.1.2" type="conditional_incidents">
+
+    <incident
+        id="LabelFor"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/initialpage.xml"
+            line="30"
+            column="6"
+            startOffset="1215"
+            endLine="30"
+            endColumn="14"
+            endOffset="1223"/>
+        <map>
+            <entry
+                name="hint"
+                boolean="false"/>
+            <entry
+                name="label"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="LabelFor"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/initialpage.xml"
+            line="43"
+            column="6"
+            startOffset="1689"
+            endLine="43"
+            endColumn="14"
+            endOffset="1697"/>
+        <map>
+            <entry
+                name="hint"
+                boolean="false"/>
+            <entry
+                name="label"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="LabelFor"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/initialpage.xml"
+            line="56"
+            column="6"
+            startOffset="2165"
+            endLine="56"
+            endColumn="14"
+            endOffset="2173"/>
+        <map>
+            <entry
+                name="hint"
+                boolean="false"/>
+            <entry
+                name="label"
+                boolean="false"/>
+        </map>
+    </incident>
+
+</incidents>

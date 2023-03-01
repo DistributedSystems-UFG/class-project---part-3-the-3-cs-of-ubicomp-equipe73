@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.1.2" type="partial_results">
+    <map id="UnusedResources">
+        <location id="R.layout.initialpage"
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/initialpage.xml"
+            line="2"
+            column="1"
+            startOffset="39"
+            endLine="91"
+            endColumn="53"
+            endOffset="3567"/>
+        <entry
+            name="model"
+            string="attr[colorPrimaryVariant(R)],color[purple_200(U),black(U),teal_200(U),white(U),teal_700(U),purple_700(U),purple_500(U)],dimen[activity_vertical_margin(U),activity_horizontal_margin(U)],drawable[ic_launcher_foreground(U),ic_launcher_background(U),ic_launcher_foreground_1(R)],id[container(D),server(U),ledOffButton(U),chart1(U),textView2(D),textView3(D),textViewTemperature(U),greenSwitch(U),login(D),loading(D),button(D),password(U),getTempButton(U),passtxt(D),logintxt(D),servertxt(D),redSwitch(U),textView(D),ledOnButton(U),username(U)],layout[initialpage(D),activity_pro(U),activity_login(U),activity_main(U)],mipmap[ic_launcher_round(U),ic_launcher(U)],string[prompt_email(U),invalid_username(U),prompt_password(U),app_name(U),login_failed(U),action_sign_in(U),action_sign_in_short(U),invalid_password(U),title_activity_login(U),welcome(U)],style[TextAppearance_AppCompat_Medium(E),TextAppearance_AppCompat_Large(R),Theme_ThermoLedMobileClient(U),Theme_MaterialComponents_DayNight_DarkActionBar(R)];a^c,21^31^11^1e^1c^12^1b^1a,22^32^10^1d,23^8^9^27^e^29^2d^20^18^2c,24^19^1f,25^b^a,26^b^a,33^34^7^6^4^3^5^2^0^1;;;"/>
+    </map>
+
+</incidents>

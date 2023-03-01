@@ -1,0 +1,213 @@
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/activity_main.xml: Error: The lint detector
+    androidx.appcompat.view.OnClickXmlDetector
+called context.getMainProject() during module analysis.
+
+This does not work correctly when running in AGP (7.1.2).
+
+In particular, there may be false positives or false negatives because
+the lint check may be using the minSdkVersion or manifest information
+from the library instead of any consuming app module.
+
+Contact the vendor of the lint issue to get it fixed/updated (if
+known, listed below), and in the meantime you can try to work around
+this by disabling the following issues:
+
+"UsingOnClickInXml"
+
+Issue Vendors:
+Vendor: Android Open Source Project (appcompat-1.3.0)
+Identifier: appcompat-1.3.0
+Feedback: https://issuetracker.google.com/issues/new?component=192731
+
+Call stack: Context.getMainProject(Context.kt:117)←OnClickXmlDetector.visitAttribute(OnClickXmlDetector.kt:51)←ResourceVisitor.visitElement(ResourceVisitor.java:161)←ResourceVisitor.visitElement(ResourceVisitor.java:177)←ResourceVisitor.visitFile(ResourceVisitor.java:125)←LintDriver$checkResourceFolder$1.run(LintDriver.kt:2233)←LintClient.runReadAction(LintClient.kt:1786)←LintDriver$LintClientWrapper.runReadAction(LintDriver.kt:2707)←LintDriver.checkResourceFolder(LintDriver.kt:2228)←LintDriver.checkResFolder(LintDriver.kt:2181)←LintDriver.runFileDetectors(LintDriver.kt:1376)←LintDriver.checkProject(LintDriver.kt:1168)←LintDriver.checkProjectRoot(LintDriver.kt:631)←LintDriver.access$checkProjectRoot(LintDriver.kt:156)←LintDriver$analyzeOnly$1.invoke(LintDriver.kt:445)←LintDriver$analyzeOnly$1.invoke(LintDriver.kt:438)←LintDriver.doAnalyze(LintDriver.kt:505)←LintDriver.analyzeOnly(LintDriver.kt:437)←LintCliClient$analyzeOnly$1.invoke(LintCliClient.kt:242)←LintCliClient$analyzeOnly$1.invoke(LintCliClient.kt:242) [LintError]
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/java/com/example/thermoledmobileclient/ProActivity.java:80: Warning: Use SwitchCompat from AppCompat or SwitchMaterial from Material library [UseSwitchCompatOrMaterialCode from appcompat-1.3.0]
+    private Switch greenSwitch;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/java/com/example/thermoledmobileclient/ProActivity.java:81: Warning: Use SwitchCompat from AppCompat or SwitchMaterial from Material library [UseSwitchCompatOrMaterialCode from appcompat-1.3.0]
+    private Switch redSwitch;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/java/com/example/thermoledmobileclient/ProActivity.java:321: Warning: Use SwitchCompat from AppCompat or SwitchMaterial from Material library [UseSwitchCompatOrMaterialCode from appcompat-1.3.0]
+            Switch reds;
+            ~~~~~~~~~~~~
+
+   Explanation for issues of type "UseSwitchCompatOrMaterialCode":
+   Use SwitchCompat from AppCompat or SwitchMaterial from Material library
+
+   Vendor: Android Open Source Project (appcompat-1.3.0)
+   Identifier: appcompat-1.3.0
+   Feedback: https://issuetracker.google.com/issues/new?component=192731
+
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/drawable-v24: Warning: This folder configuration (v24) is unnecessary; minSdkVersion is 27. Merge all the resources in this folder into drawable. [ObsoleteSdkInt]
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/mipmap-anydpi-v26: Warning: This folder configuration (v26) is unnecessary; minSdkVersion is 27. Merge all the resources in this folder into mipmap-anydpi. [ObsoleteSdkInt]
+
+   Explanation for issues of type "ObsoleteSdkInt":
+   This check flags version checks that are not necessary, because the
+   minSdkVersion (or surrounding known API level) is already at least as high
+   as the version checked for.
+
+   Similarly, it also looks for resources in -vNN folders, such as values-v14
+   where the version qualifier is less than or equal to the minSdkVersion,
+   where the contents should be merged into the best folder.
+
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/java/com/example/thermoledmobileclient/MainActivity.java:73: Warning: Use Integer.valueOf(port) instead [UseValueOf]
+        Integer iport = new Integer(port);
+                        ~~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/java/com/example/thermoledmobileclient/MainActivity.java:74: Warning: Use Integer.valueOf(key) instead [UseValueOf]
+        Integer ikey = new Integer(key);
+                       ~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/java/com/example/thermoledmobileclient/MainActivity.java:135: Warning: Use Integer.valueOf(port) instead [UseValueOf]
+        Integer iport = new Integer(port);
+                        ~~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/java/com/example/thermoledmobileclient/MainActivity.java:136: Warning: Use Integer.valueOf(key) instead [UseValueOf]
+        Integer ikey = new Integer(key);
+                       ~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/java/com/example/thermoledmobileclient/MainActivity.java:145: Warning: Use Integer.valueOf(port) instead [UseValueOf]
+        Integer iport = new Integer(port);
+                        ~~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/java/com/example/thermoledmobileclient/MainActivity.java:146: Warning: Use Integer.valueOf(key) instead [UseValueOf]
+        Integer ikey = new Integer(key);
+                       ~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/java/com/example/thermoledmobileclient/ProActivity.java:257: Warning: Use Integer.valueOf(port) instead [UseValueOf]
+        Integer iport = new Integer(port);
+                        ~~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/java/com/example/thermoledmobileclient/ProActivity.java:258: Warning: Use Integer.valueOf(key) instead [UseValueOf]
+        Integer ikey = new Integer(key);
+                       ~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/java/com/example/thermoledmobileclient/ProActivity.java:271: Warning: Use Integer.valueOf(port) instead [UseValueOf]
+        Integer iport = new Integer(port);
+                        ~~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/java/com/example/thermoledmobileclient/ProActivity.java:272: Warning: Use Integer.valueOf(key) instead [UseValueOf]
+        Integer ikey = new Integer(key);
+                       ~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UseValueOf":
+   You should not call the constructor for wrapper classes directly, such
+   as`new Integer(42)`. Instead, call the valueOf factory method, such as
+   Integer.valueOf(42). This will typically use less memory because common
+   integers such as 0 and 1 will share a single instance.
+
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/initialpage.xml:2: Warning: The resource R.layout.initialpage appears to be unused [UnusedResources]
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+^
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests=true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests=true.
+
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/initialpage.xml:30: Warning: Missing autofillHints attribute [Autofill]
+    <EditText
+     ~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/initialpage.xml:43: Warning: Missing autofillHints attribute [Autofill]
+    <EditText
+     ~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/initialpage.xml:56: Warning: Missing autofillHints attribute [Autofill]
+    <EditText
+     ~~~~~~~~
+
+   Explanation for issues of type "Autofill":
+   Specify an autofillHints attribute when targeting SDK version 26 or higher
+   or explicitly specify that the view is not important for autofill. Your app
+   can help an autofill service classify the data correctly by providing the
+   meaning of each view that could be autofillable, such as views representing
+   usernames, passwords, credit card fields, email addresses, etc.
+
+   The hints can have any value, but it is recommended to use predefined
+   values like 'username' for a username or 'creditCardNumber' for a credit
+   card number. For a list of all predefined autofill hint constants, see the
+   AUTOFILL_HINT_ constants in the View reference at
+   https://developer.android.com/reference/android/view/View.html.
+
+   You can mark a view unimportant for autofill by specifying an
+   importantForAutofill attribute on that view or a parent view. See
+   https://developer.android.com/reference/android/view/View.html#setImportant
+   ForAutofill(int).
+
+   https://developer.android.com/guide/topics/text/autofill.html
+
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/initialpage.xml:30: Warning: Missing accessibility label: provide either a view with an android:labelFor that references this view or provide an android:hint [LabelFor]
+    <EditText
+     ~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/initialpage.xml:43: Warning: Missing accessibility label: provide either a view with an android:labelFor that references this view or provide an android:hint [LabelFor]
+    <EditText
+     ~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/initialpage.xml:56: Warning: Missing accessibility label: provide either a view with an android:labelFor that references this view or provide an android:hint [LabelFor]
+    <EditText
+     ~~~~~~~~
+
+   Explanation for issues of type "LabelFor":
+   Editable text fields should provide an android:hint or, provided your
+   minSdkVersion is at least 17, they may be referenced by a view with a
+   android:labelFor attribute.
+
+   When using android:labelFor, be sure to provide an android:text or an
+   android:contentDescription.
+
+   If your view is labeled but by a label in a different layout which includes
+   this one, just suppress this warning from lint.
+
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/activity_login.xml:33: Warning: Hardcoded string "Ip do Servidor", should use @string resource [HardcodedText]
+        android:hint="Ip do Servidor"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/activity_main.xml:16: Warning: Hardcoded string "Get Temperature", should use @string resource [HardcodedText]
+        android:text="Get Temperature"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/activity_main.xml:26: Warning: Hardcoded string "Temperature will show here", should use @string resource [HardcodedText]
+        android:text="Temperature will show here"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/activity_main.xml:37: Warning: Hardcoded string "Led On", should use @string resource [HardcodedText]
+        android:text="Led On"
+        ~~~~~~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/activity_main.xml:47: Warning: Hardcoded string "Led Off", should use @string resource [HardcodedText]
+        android:text="Led Off"
+        ~~~~~~~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/activity_pro.xml:26: Warning: Hardcoded string "Red Led", should use @string resource [HardcodedText]
+        android:text="Red Led"
+        ~~~~~~~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/activity_pro.xml:39: Warning: Hardcoded string "Green Led", should use @string resource [HardcodedText]
+        android:text="Green Led"
+        ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/initialpage.xml:14: Warning: Hardcoded string "Senha: ", should use @string resource [HardcodedText]
+        android:text="Senha: "
+        ~~~~~~~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/initialpage.xml:25: Warning: Hardcoded string "Login: ", should use @string resource [HardcodedText]
+        android:text="Login: "
+        ~~~~~~~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/initialpage.xml:39: Warning: Hardcoded string "User", should use @string resource [HardcodedText]
+        android:text="User"
+        ~~~~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/initialpage.xml:52: Warning: Hardcoded string "password", should use @string resource [HardcodedText]
+        android:text="password"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/initialpage.xml:65: Warning: Hardcoded string "34.136.25.200", should use @string resource [HardcodedText]
+        android:text="34.136.25.200"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/initialpage.xml:76: Warning: Hardcoded string "Entrar", should use @string resource [HardcodedText]
+        android:text="Entrar"
+        ~~~~~~~~~~~~~~~~~~~~~
+/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/initialpage.xml:87: Warning: Hardcoded string "Servidor: ", should use @string resource [HardcodedText]
+        android:text="Servidor: "
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+1 errors, 36 warnings

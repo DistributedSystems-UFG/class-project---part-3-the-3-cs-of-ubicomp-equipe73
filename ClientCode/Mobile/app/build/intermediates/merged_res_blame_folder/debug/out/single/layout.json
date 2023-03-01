@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/initialpage.xml",
+        "source": "/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/initialpage.xml"
+    },
+    {
+        "merged": "/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login.xml",
+        "source": "/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/activity_login.xml"
+    },
+    {
+        "merged": "/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_pro.xml",
+        "source": "/home/gustavo/facul/SSU/parte2/class-project---part-2-android-iot-client-equipe73/app/src/main/res/layout/activity_pro.xml"
+    }
+]
