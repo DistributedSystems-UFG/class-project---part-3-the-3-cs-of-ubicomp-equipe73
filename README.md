@@ -1,14 +1,14 @@
-# SSU-2022_2-StarterProject
+# SSU-2022_2-Project
 
 This repository contains the three main components used in the class project, namely:
 
-1. IoT Code: Code to run on the Raspberry Pi, which will act as an IoT device with sensors and actuators. Obs.: Without the Raspberry Pi kits, you may run this part on a usual machine (either local or on the cloud), simulating the temperature sensor (e.g., a routine that generates random temperature values) and the actuator (led - a simple on-off variable).
+1. IoT Code: Code to run on the Raspberry Pi, which will act as an IoT device with sensors and actuators.
 
 2. Cloud Code: Code to run on the cloud servers - Kafka consumer and producer; gRPC IoT service
 
-3. Client Code: command line gRPC clients of the IoT service
+3. Client Code: command line and mobile gRPC clients of the IoT service
 
-## Steps to run the demo:
+## Steps to run:
 
 ### a. Start Kafka on a cloud-based server (server-1):
 
@@ -34,7 +34,7 @@ $ python3 -m grpc_tools.protoc -I../../protos --python_out=. --grpc_python_out=.
 
 - Run virtual_device_service.py (it contains the cloud-based Consumer and Producer, and well as the gRPC service):
 
-$ python3 virtual_device_service.py
+$ python3 server.py
 
 (If necessary, edit the const.py file with the IP address of the Kafka Broker -- server-1)
 
@@ -52,7 +52,7 @@ $ pip3 install kafka-python
 
 - Clone the repo:
 
-$ git clone https://github.com/professorfabio/SSU-2022_2-StarterProject.git
+$ git clone https://github.com/DistributedSystems-UFG/class-project---part-3-the-3-cs-of-ubicomp-equipe73.git
 
 (If necessary, install git)
 
@@ -68,15 +68,16 @@ $ python3 device-controler.py
 
 $ cd ClientCode/python
 
-$ python3 -m grpc_tools.protoc -I../protos --python_out=. --grpc_python_out=. ../protos/iot_service.proto
+$ python3 -m grpc_tools.protoc -I../../protos --python_out=. --grpc_python_out=. .././protos/iot_service.proto
 
-- Run the client code (for led control and thermometer access)
+- Run the client code 
 
-$ python3 thermometer_client.py
+$ python3 Client.py username password
 
 $ python3 led_client.py 1 red  --or-- $ python3 led_client.py 0 red (turn on and off, respectively. Just examples)
 
 (If necessary, edit the const.py file with the IP address of the gRPC server -- server-2)
+
 
 ## Overall structure of the system
 
