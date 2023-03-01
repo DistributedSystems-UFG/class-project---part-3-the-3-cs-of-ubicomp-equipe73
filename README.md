@@ -73,8 +73,7 @@ $ python3 -m grpc_tools.protoc -I../../protos --python_out=. --grpc_python_out=.
 - Run the client code 
 
 $ python3 Client.py username password
-
-$ python3 led_client.py 1 red  --or-- $ python3 led_client.py 0 red (turn on and off, respectively. Just examples)
+(default username/password is admin/admin)
 
 (If necessary, edit the const.py file with the IP address of the gRPC server -- server-2)
 
